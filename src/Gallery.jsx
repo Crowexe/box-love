@@ -2,8 +2,6 @@ import React from 'react';
 import './index.css';
 import ImagenConTexto from './ImagenConTexto.jsx';
 
-import Player from '@madzadev/audio-player';
-
 function Gallery() {
  
   return (
