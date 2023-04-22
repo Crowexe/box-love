@@ -1,25 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react'
+import ReactPlayer from 'react-player/youtube'
 
-class ReproductorDeAudio extends Component {
-  constructor(props) {
-    super(props);
-
-    this.audioElement = React.createRef();
-  }
-
-  componentDidMount() {
-    this.audioElement.current.play();
-  }
-
-  render() {
-    return (
-      <div>
-        <audio>
-          <source src="/images/1.mp3" type="audio/mpeg" />
-        </audio>
-      </div>
-    );
-  }
+function ReproductorDeAudio() { 
+  <>
+      <ReactPlayer url='https://www.youtube.com/watch?v=ysz5S6PUM-U' />
+      <h1>Hola</h1>
+  </>
 }
 
 export default ReproductorDeAudio;
